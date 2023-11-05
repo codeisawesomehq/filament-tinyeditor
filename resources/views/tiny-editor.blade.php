@@ -121,7 +121,7 @@
 				});
 				window.addEventListener('beforeunload', (event) => {
                     if (tinymce.activeEditor.isDirty()) {
-                        return 'Are you sure you want to leave?';
+                        event.returnValue = 'Are you sure you want to leave?';
                     }
                 });
             });
