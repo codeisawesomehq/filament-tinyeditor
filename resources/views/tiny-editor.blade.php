@@ -119,7 +119,7 @@
 					automatic_uploads: true,
 					{{ $getCustomConfigs() }}
 				});
-				$(window).on('beforeunload', function () {
+				window.addEventListener('beforeunload', (event) => {
                     if (tinymce.activeEditor.isDirty()) {
                         return 'Are you sure you want to leave?';
                     }
