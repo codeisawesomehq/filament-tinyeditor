@@ -1,6 +1,6 @@
 <?php
 
-namespace AmidEsfahani\FilamentTinyEditor;
+namespace CodeIsAwesome\FilamentTinyEditor;
 
 use Filament\Support\Assets\Js;
 use Filament\Support\Assets\Css;

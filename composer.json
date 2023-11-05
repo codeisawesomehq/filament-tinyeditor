@@ -1,13 +1,9 @@
 {
-    "name": "amidesfahani/filament-tinyeditor",
+    "name": "codeisawesomehq/filament-tinyeditor",
     "description": "Filament TinyMce Editor v6",
     "license": "MIT",
     "keywords": ["laravel", "filament", "tinyeditor", "tinymce"],
     "authors": [
-        {
-            "name": "Amid Esfahani",
-            "email": "amid.esfahani@gmail.com"
-        }
     ],
     "require": {
         "php": "^8.1",
@@ -15,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "AmidEsfahani\\FilamentTinyEditor\\": "src/"
+            "CodeIsAwesome\\FilamentTinyEditor\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "AmidEsfahani\\FilamentTinyEditor\\TinyeditorServiceProvider"
+                "CodeIsAwesome\\FilamentTinyEditor\\TinyeditorServiceProvider"
             ]
         }
     },
