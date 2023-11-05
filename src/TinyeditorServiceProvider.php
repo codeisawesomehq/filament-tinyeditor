@@ -93,6 +93,7 @@ class TinyeditorServiceProvider extends PackageServiceProvider
         FilamentAsset::register([
 			Css::make('tiny-css', __DIR__ . '/../resources/css/style.css'),
 			Js::make('tinymce', 'https://cdn.jsdelivr.net/npm/tinymce@6.7.1/tinymce.js'),
+            Js::make('tiny-js', __DIR__ . '/../resources/js/tiny-editor.js'),
             ...$languages
 		], package: 'codeisawesomehq/filament-tinyeditor');
 	}
