@@ -119,6 +119,11 @@
 					automatic_uploads: true,
 					{{ $getCustomConfigs() }}
 				});
+				$(window).on('beforeunload', function () {
+                    if (tinymce.activeEditor.isDirty()) {
+                        return 'Are you sure you want to leave?';
+                    }
+                });
             });
         })()"
         x-cloak
