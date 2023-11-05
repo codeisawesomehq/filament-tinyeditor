@@ -60,12 +60,11 @@
                             window.tinySettingsCopy.push(editor.settings);
                         }
 
-						editor.on('blur', function(e) {
-							state = editor.getContent()
-						});
-		
+{{--						editor.on('blur', function(e) {--}}
+{{--							state = editor.getContent()--}}
+{{--						});--}}
+{{--		--}}
 						editor.on('init', function(e) {
-							console.log('ready')
 							if (state != null) {
 							    editor.setContent(state)
 							}
