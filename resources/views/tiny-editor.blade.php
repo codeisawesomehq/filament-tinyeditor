@@ -8,7 +8,7 @@
 	@endphp
 
     <div
-        x-data="{ state: $wire.entangle('{{ $getStatePath() }}'), initialized: false }"
+        x-data="{ state: $wire.{{ $applyStateBindingModifiers("\$entangle('{$getStatePath()}')") }}, initialized: false }"
 		x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('tiny-css', package: 'codeisawesomehq/filament-tinyeditor'))]"
         x-load-js="[@js(\Filament\Support\Facades\FilamentAsset::getScriptSrc($getLanguageId(), package: 'codeisawesomehq/filament-tinyeditor'))]"
         x-init="(() => {
@@ -60,10 +60,10 @@
                             window.tinySettingsCopy.push(editor.settings);
                         }
 
-{{--						editor.on('blur', function(e) {--}}
-{{--							state = editor.getContent()--}}
-{{--						});--}}
-{{--		--}}
+						editor.on('blur', function(e) {
+							state = editor.getContent()
+						});
+
 						editor.on('init', function(e) {
 							if (state != null) {
 							    editor.setContent(state)
