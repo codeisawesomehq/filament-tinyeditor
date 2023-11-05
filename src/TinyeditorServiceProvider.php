@@ -94,6 +94,6 @@ class TinyeditorServiceProvider extends PackageServiceProvider
 			Css::make('tiny-css', __DIR__ . '/../resources/css/style.css'),
 			Js::make('tinymce', 'https://cdn.jsdelivr.net/npm/tinymce@6.7.1/tinymce.js'),
             ...$languages
-		], package: 'amidesfahani/filament-tinyeditor');
+		], package: 'codeisawesomehq/filament-tinyeditor');
 	}
 }

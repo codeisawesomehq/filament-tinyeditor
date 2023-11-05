@@ -9,7 +9,7 @@ A [TineMce](https://www.tiny.cloud/) integration for [Filament](https://filament
 Install the package via composer
 
 ```bash
-composer require amidesfahani/filament-tinyeditor
+composer require codeisawesomehq/filament-tinyeditor
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ composer require amidesfahani/filament-tinyeditor
 The editor extends the default Field class so most other methods available on that class can be used when adding it to a form.
 
 ```php
-use AmidEsfahani\FilamentTinyEditor\TinyEditor;
+use CodeIsAwesome\FilamentTinyEditor\TinyEditor;
 
 TinyEditor::make('content')
 	->fileAttachmentsDisk('public')

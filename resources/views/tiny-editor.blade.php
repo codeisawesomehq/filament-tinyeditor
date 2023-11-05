@@ -9,8 +9,8 @@
 
     <div
         x-data="{ state: $wire.entangle('{{ $getStatePath() }}'), initialized: false }"
-		x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('tiny-css', package: 'amidesfahani/filament-tinyeditor'))]"
-        x-load-js="[@js(\Filament\Support\Facades\FilamentAsset::getScriptSrc($getLanguageId(), package: 'amidesfahani/filament-tinyeditor'))]"
+		x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('tiny-css', package: 'codeisawesomehq/filament-tinyeditor'))]"
+        x-load-js="[@js(\Filament\Support\Facades\FilamentAsset::getScriptSrc($getLanguageId(), package: 'codeisawesomehq/filament-tinyeditor'))]"
         x-init="(() => {
             $nextTick(() => {
 				tinymce.init({
