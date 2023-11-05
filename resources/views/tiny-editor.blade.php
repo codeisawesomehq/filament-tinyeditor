@@ -27,8 +27,8 @@
 					max_height: {{ $getMaxHeight() }},
 					min_height: {{ $getMinHeight() }},
 
-					skin: (document.querySelector('html').getAttribute('class').includes('dark') ? 'oxide-dark' : ''),
-					content_css: (document.querySelector('html').getAttribute('class').includes('dark') ? 'dark' : ''),
+					skin: (document.querySelector('html').getAttribute('class').includes('dark') ? 'oxide-dark' : 'oxide'),
+					content_css: (document.querySelector('html').getAttribute('class').includes('dark') ? 'dark' : 'default'),
 
 					plugins: '{{ $getPlugins() }}',
 		
